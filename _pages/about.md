@@ -10,9 +10,9 @@ header:
 
 ## 🚀 Kubernetes Administrator/Developer | Cloud Native Enthusiast | AI & Data Science Advocate
 
-Greetings! I'm a highly motivated Kubernetes Engineer and Developer with a passion for leveraging technology to solve complex problems. My journey began in Toronto and took me through diverse experiences, shaping my dedication to the intersection of cloud native computing and data science.
+Greetings! I'm a highly motivated Kubernetes Engineer and Developer with a passion for leveraging technology to solve complex problems. My journey began in Toronto and took me through diverse experiences, shaping my dedication to the intersection of cloud native computing, data science, biology, and humanity as a whole.
 
-## 🌐 Professional Background:
+## 🌐 Professional Background
 
 ### Education:
 
