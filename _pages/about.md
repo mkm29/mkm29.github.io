@@ -54,6 +54,6 @@ Greetings! I'm a highly motivated Kubernetes Engineer and Developer with a passi
 
 I'm open to networking with professionals who share a passion for cloud native computing, AI, and data science. Let's connect to explore potential collaborations and discuss exciting opportunities!
 
-Feel free to reach out via LinkedIn messaging or email at [mitch@mitchmurphy/io](mitch@mitchmurphy.io).
+Feel free to reach out via LinkedIn messaging or email at [mitch@mitchmurphy.io](mitch@mitchmurphy.io).
 
 Looking forward to connecting with you!
