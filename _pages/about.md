@@ -16,7 +16,7 @@ Greetings! I'm a highly motivated Kubernetes Engineer and Developer with a passi
 
 ### Education:
 
-* **Bachelor of Science in Computer Science & Mathematics** | [Case Western Reserve University](https://case.edu/) | Cleveland, Ohio | [2019]
+* **Bachelor of Science in Computer Science & Mathematics** | [Case Western Reserve University](https://case.edu/) | Cleveland, Ohio | 2019
 * **Early Career Highlights**:
   * Recipient of Microsoft's "You Can Make A Difference" international scholarship and Apple Scholars program.
   * Active involvement in state-wide math and science competitions, showcasing a commitment to academic excellence.
