@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 ---
 
-# 🚀 Kubernetes Administrator/Developer | Cloud Native Enthusiast | AI & Data Science Advocate
+## 🚀 Kubernetes Administrator/Developer | Cloud Native Enthusiast | AI & Data Science Advocate
 
 Greetings! I'm a highly motivated Kubernetes Engineer and Developer with a passion for leveraging technology to solve complex problems. My journey began in Toronto and took me through diverse experiences, shaping my dedication to the intersection of cloud native computing and data science.
 
