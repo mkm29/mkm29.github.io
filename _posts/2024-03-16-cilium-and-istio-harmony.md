@@ -53,25 +53,13 @@ helm upgrade cilium \
 kubectl create namespace istio-system
 ```
 
+_Note_ that you can also specify the creation of the namespace in the below script.
+
 ## Create self-signed certificate
 
 For this step we are going to use a few scripts from the istio repository. These tools can be found [here](../tools/). The first step is to create the namespace and then generate the self-signed certificate that Istio will be using (here we are assuming 3 clusters). The following script will create the certificates and then create the secrets in each cluster (you must have the `kubeconfig` for each cluster in order to run the script).
 
-```bash
-echo "Making Root CA"
-# make -f ../tools/certs/Makefile.selfsigned.mk root-ca
-for cluster in "smig-cluster1 smig-cluster2 smig-cluster3"
-do
-  make -f ../tools/certs/Makefile.selfsigned.mk "$cluster-cacerts"
-  kubectl config use-context $cluster
-  kubectl create --context=$cluster namespace istio-system
-  kubectl create secret generic cacerts -n istio-system \
-        --from-file=$cluster/ca-cert.pem \
-        --from-file=$cluster/ca-key.pem \
-        --from-file=$cluster/root-cert.pem \
-        --from-file=$cluster/cert-chain.pem
-done
-```
+You can find the scripts at the following location: [istio-tools](../scripts/istio), the specific script is [make-certs.sh](../scripts/istio/make-certs.sh).
 
 ## Create NFS provisioner
 
