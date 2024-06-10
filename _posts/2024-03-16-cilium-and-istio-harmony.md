@@ -89,7 +89,7 @@ For the purposes of this tutorial, we will be using a Debian based system (Pop!_
 
 Vagrant requires a virtualization provider to create and manage virtual machines. The most commonly used provider is VirtualBox, but you can also use others like VMware or Docker. Here, we will focus on VirtualBox.
 
-```bash
+```console
 sudo apt update
 sudo apt install -y virtualbox
 ```
@@ -98,7 +98,7 @@ sudo apt install -y virtualbox
 
 Next, you need to install Vagrant. You can download the .deb package from the official Vagrant website or use the package manager.
 
-```bash
+```console
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 sudo apt update
@@ -107,7 +107,7 @@ sudo apt install -y vagrant
 
 There are a few other packages that you will need:
 
-```bash
+```console
 sudo apt update && sudo apt install -y libvirt-dev qemu-kvm libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager libvirt-doc ruby-libvirt qemu libvirt-clients ebtables dnsmasq-base libxslt-dev libxml2-dev zlib1g-dev ruby-dev libguestfs-tools
 ```
 
@@ -115,7 +115,7 @@ sudo apt update && sudo apt install -y libvirt-dev qemu-kvm libvirt-daemon-syste
 
 Depending on your use case, you might need to install additional Vagrant plugins. For example, if you're using a different provider or need specific functionalities.
 
-```bash
+```console
 PLUGINS=vagrant-vboxmanage vagrant-vbguest vagrant-libvirt vagrant-reload
 for PLUGIN in $PLUGINS; do
   vagrant plugin install $PLUGIN
@@ -126,7 +126,7 @@ done
 
 For VirtualBox to work correctly, ensure that the necessary kernel modules are loaded.
 
-```bash
+```console
 sudo modprobe vboxdrv
 sudo modprobe vboxnetflt
 sudo modprobe vboxnetadp
@@ -136,7 +136,7 @@ sudo modprobe vboxnetadp
 
 To confirm that Vagrant and VirtualBox are installed correctly, you can check their versions.
 
-```bash
+```console
 vagrant --version
 vboxmanage --version
 ```
